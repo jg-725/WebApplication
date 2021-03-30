@@ -23,7 +23,7 @@ def cities_import() -> List[Dict]:
     cursor.close()
     connection.close()
 
-    result result
+    return result
 
 
 @app.route('/')
