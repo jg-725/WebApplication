@@ -12,20 +12,15 @@
               crossorigin="anonymous">
 
         {% if user %}
-            <title>Homepage of {{ user.username}}</title>
+            <title>Home</title>
         {% else %}
-            <title>Welcome to the Site!</title>
+            <title>Welcome To The Site</title>
         {% endif %}
     </head>
     <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">{% if user %}
-            Homepage of {{ user.username }}
-        {% else %}
-            Welcome to the Site!
-        {% endif %}
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: burlywood">
+        <a class="navbar-brand" href="#"></a>
         <!-- Enabling Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavbar">
@@ -37,7 +32,7 @@
             <ul class="navbar-nav">
                 <!-- Home Link -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Homepage<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#">Home</a>
                 </li>
                 <!-- Second Link -->
                 <li class="nav-item">
